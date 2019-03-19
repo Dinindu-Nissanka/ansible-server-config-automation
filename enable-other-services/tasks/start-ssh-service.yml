@@ -1,0 +1,7 @@
+---
+# tasks file for ssh-service-enable
+
+- name: Enable service ssh
+  service:
+    name: ssh
+    enabled: yes

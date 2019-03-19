@@ -1,0 +1,5 @@
+---
+# tasks file for service-enable
+
+- include: start-ssh-service.yml
+- include: start-redis-server-service.yml
