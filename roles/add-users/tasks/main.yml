@@ -1,0 +1,9 @@
+---
+# tasks file for add-users
+
+- name: Clone private git repository
+  git:
+    repo: "{{ private_git_repo }}"
+    key_file: "{{ git_ssh_key_location }}"
+    dest: "{{ repo_directory }}/git/user-repository"
+      

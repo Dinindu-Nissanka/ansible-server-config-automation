@@ -7,4 +7,4 @@
     - enable-other-services
     - setup-openvas
     - setup-tools
-    - add-remote-users
+    - add-users
