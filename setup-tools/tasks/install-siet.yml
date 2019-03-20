@@ -1,0 +1,7 @@
+---
+
+- name: Git clone SIET repository
+  git:
+    repo: 'https://github.com/Sab0tag3d/SIET.git'
+    dest: "{{ tool_dir }}/SIET"
+    clone: yes

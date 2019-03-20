@@ -3,7 +3,7 @@
 - name: Git clone powershell empire repository
   git:
     repo: 'https://github.com/EmpireProject/Empire.git'
-    dest: "{{ tool_dir }}"
+    dest: "{{ tool_dir }}/Empire"
     clone: yes
 
 - name: Create required key
@@ -11,7 +11,7 @@
   register: staging_key
 
 - name: Install powershell empire
-  command: sh install.sh 
+  command: bash install.sh 
   args:
     chdir: "{{ tool_dir }}/Empire/setup"
   environment:

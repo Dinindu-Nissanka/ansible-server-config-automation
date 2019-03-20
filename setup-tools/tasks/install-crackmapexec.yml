@@ -12,7 +12,21 @@
 - name: Git clone CrackMapExec repository
   git:
     repo: 'https://github.com/byt3bl33d3r/CrackMapExec.git'
-    dest: "{{ tool_dir }}"
+    dest: "{{ tool_dir }}/CrackMapExec"
     clone: yes  
     recursive: yes
 
+- name: pip env install and shell
+  command: "{{ item }}"
+  args:
+    chdir: "{{ tool_dir }}/CrackMapExec"
+  environment:
+    PATH: "{{ ansible_env.PATH }}:/root/.local/bin"
+  with_items:
+    - pipenv install
+    - pipenv shell   
+
+- name: Setup crackmapexec
+  command: python setup.py install && deactivate
+  args:
+    chdir: "{{ tool_dir }}/CrackMapExec"
