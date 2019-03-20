@@ -11,13 +11,22 @@
 
 - include: install-powershell-empire.yml
 - include: install-crackmapexec.yml
-- include: install-siet.yml
+- include: clone-siet.yml
 - include: install-emailharvester.yml
-- include: install-scancannon.yml
+- include: clone-scancannon.yml
 - include: install-mailsend.yml
-- include: install-subbrute.yml
+- include: clone-subbrute.yml
 - include: install-cracke-dit.yml
 - include: install-spoofcheck.yml
-- include: install-checko365.yml
+- include: clone-checko365.yml
 - include: install-merlin-server.yml
 - include: install-gscript.yml
+- include: install-mutator.yml
+- include: install-python-matrix-bot-api.yml
+- include: install-macropack.yml
+- include: clone-chameleon.yml
+- include: clone-waf-bypass.yml
+- include: clone-whatwaf.yml
+- include: clone-impacket.yml
+- include: install-ews-crack.yml
+- include: clone-brutespray.yml

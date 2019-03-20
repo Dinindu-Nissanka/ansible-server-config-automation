@@ -1,0 +1,13 @@
+---
+
+- name: Git clone macropack repository
+  git:
+    repo: 'https://github.com/sevagas/macro_pack.git'
+    dest: "{{ tool_dir }}/macro_pack"
+    clone: yes
+
+- name: Install requirements
+  pip: 
+    requirements: "{{ tool_dir }}/macro_pack/requirements.txt"
+    virtualenv: "{{ tool_dir }}/macro_pack"
+    virtualenv_python: python3.7    

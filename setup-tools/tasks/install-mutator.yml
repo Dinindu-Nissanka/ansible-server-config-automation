@@ -1,0 +1,16 @@
+---
+
+- name: Git clone mutator repository
+  git:
+    repo: 'https://bitbucket.org/alone/mutator.git'
+    dest: "{{ tool_dir }}/mutator"
+    clone: yes
+
+- name: Create mutator executable
+  make:
+    chdir: "{{ tool_dir }}/mutator"
+
+- name: Copy mutator executable to bin
+  copy:
+    src: "{{ tool_dir }}/mutator/mutator"
+    dest: "/usr/local/bin/"   

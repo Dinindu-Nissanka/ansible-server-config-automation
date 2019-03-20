@@ -1,0 +1,17 @@
+---
+
+- name: Install matrix client
+  pip:
+    name: matrix_client
+
+- name: Git clone python-matrix-bot-api repository
+  git:
+    repo: 'https://github.com/shawnanastasio/python-matrix-bot-api.git'
+    dest: "{{ tool_dir }}/python-matrix-bot-api"
+    clone: yes
+
+- name: Install matrix-python-sdk for encryption
+  pip:
+    name: git+https://github.com/Zil0/matrix-python-sdk/tree/e2e_beta_2
+    executable: pip-3.7
+    extra_args: --process-dependency-links

@@ -1,0 +1,7 @@
+---
+
+- name: Git clone impacket repository
+  git:
+    repo: 'https://github.com/SecureAuthCorp/impacket.git'
+    dest: "{{ tool_dir }}/impacket"
+    clone: yes

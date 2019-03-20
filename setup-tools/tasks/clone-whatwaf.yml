@@ -1,0 +1,7 @@
+---
+
+- name: Git clone WhatWaf repository
+  git:
+    repo: 'https://github.com/Ekultek/WhatWaf.git'
+    dest: "{{ tool_dir }}/WhatWaf"
+    clone: yes

@@ -1,0 +1,7 @@
+---
+
+- name: Git clone brutespray repository
+  git:
+    repo: 'https://github.com/x90skysn3k/brutespray.git'
+    dest: "{{ tool_dir }}/brutespray"
+    clone: yes

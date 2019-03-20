@@ -9,4 +9,6 @@
 - name: Install merlin-server
   make:
     chdir: "{{ go_path }}/src/github.com/Ne0nd0g/merlin"
-    target: install      
+    target: server-linux
+  environment:
+    GOPATH: "{{ go_path }}"      
