@@ -2,7 +2,7 @@
 
 - name: Git clone mutator repository
   git:
-    repo: 'https://bitbucket.org/alone/mutator.git'
+    repo: "{{ git_repo_mutator }}"
     dest: "{{ tool_dir }}/mutator"
     clone: yes
 

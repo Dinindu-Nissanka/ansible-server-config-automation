@@ -2,6 +2,6 @@
 
 - name: Git clone checko365 repository
   git:
-    repo: 'https://github.com/vysec/checko365.git'
+    repo: "{{ git_repo_checko365 }}"
     dest: "{{ tool_dir }}/checko365"
     clone: yes

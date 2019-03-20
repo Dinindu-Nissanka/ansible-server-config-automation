@@ -2,7 +2,7 @@
 
 - name: Git clone powershell empire repository
   git:
-    repo: 'https://github.com/EmpireProject/Empire.git'
+    repo: "{{ git_repo_empire }}"
     dest: "{{ tool_dir }}/Empire"
     clone: yes
 

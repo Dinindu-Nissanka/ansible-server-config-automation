@@ -1,2 +1,24 @@
 ---
 # vars file for setup-tools
+
+git_repo_brutespray: https://github.com/x90skysn3k/brutespray.git
+git_repo_chameleon: https://github.com/mdsecactivebreach/Chameleon.git
+git_repo_checko365: https://github.com/vysec/checko365.git
+git_repo_impacket: https://github.com/SecureAuthCorp/impacket.git
+git_repo_scancannon: https://github.com/johnnyxmas/ScanCannon.git
+git_repo_siet: https://github.com/Sab0tag3d/SIET.git
+git_repo_subbrute: https://github.com/TheRook/subbrute.git
+git_repo_bypass_firewall: https://github.com/vincentcox/bypass-firewalls-by-DNS-history.git
+git_repo_whatwaf: https://github.com/Ekultek/WhatWaf.git
+git_repo_cracke_dit: https://github.com/eth0izzle/cracke-dit.git
+git_repo_crackmapexec: https://github.com/byt3bl33d3r/CrackMapExec.git
+git_repo_emailharvester: https://github.com/maldevel/EmailHarvester.git
+git_repo_ews_crack: https://github.com/mikesiegel/ews-crack.git
+git_repo_macro_pack: https://github.com/sevagas/macro_pack.git
+git_repo_mailsend: https://github.com/muquit/mailsend.git
+git_repo_merlin: https://github.com/Ne0nd0g/merlin.git
+git_repo_mutator: https://bitbucket.org/alone/mutator.git
+git_repo_empire: https://github.com/EmpireProject/Empire.git
+git_repo_python_matrix_bot_api: https://github.com/shawnanastasio/python-matrix-bot-api.git
+git_repo_python_matrix_sdk: git+https://github.com/Zil0/matrix-python-sdk.git@e2e_beta_2
+git_repo_spoofcheck: https://github.com/BishopFox/spoofcheck.git

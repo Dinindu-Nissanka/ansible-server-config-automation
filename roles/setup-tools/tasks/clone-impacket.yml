@@ -2,6 +2,6 @@
 
 - name: Git clone impacket repository
   git:
-    repo: 'https://github.com/SecureAuthCorp/impacket.git'
+    repo: "{{ git_repo_impacket }}"
     dest: "{{ tool_dir }}/impacket"
     clone: yes

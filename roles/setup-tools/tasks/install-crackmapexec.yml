@@ -11,7 +11,7 @@
 
 - name: Git clone CrackMapExec repository
   git:
-    repo: 'https://github.com/byt3bl33d3r/CrackMapExec.git'
+    repo: "{{ git_repo_crackmapexec }}"
     dest: "{{ tool_dir }}/CrackMapExec"
     clone: yes  
     recursive: yes

@@ -2,6 +2,6 @@
 
 - name: Git clone WAF bypass repository
   git:
-    repo: 'https://github.com/vincentcox/bypass-firewalls-by-DNS-history.git'
+    repo: "{{ git_repo_bypass_firewall }}"
     dest: "{{ tool_dir }}/bypass-firewalls-by-DNS-history"
     clone: yes

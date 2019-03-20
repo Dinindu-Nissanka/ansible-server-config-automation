@@ -1,7 +1,7 @@
 ---
 
-- name: Git clone subbrute repository
+- name: Git clone Chameleon repository
   git:
-    repo: 'https://github.com/TheRook/subbrute.git'
-    dest: "{{ tool_dir }}/subbrute"
+    repo: "{{ git_repo_chameleon }}"
+    dest: "{{ tool_dir }}/Chameleon"
     clone: yes

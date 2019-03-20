@@ -2,7 +2,7 @@
 
 - name: Git clone EmailHarvester repository
   git:
-    repo: 'https://github.com/maldevel/EmailHarvester.git'
+    repo: "{{ git_repo_emailharvester }}"
     dest: "{{ tool_dir }}/EmailHarvester"
     clone: yes
 

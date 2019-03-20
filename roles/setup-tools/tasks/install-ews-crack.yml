@@ -2,7 +2,7 @@
 
 - name: Git clone ews-crack repository
   git:
-    repo: 'https://github.com/mikesiegel/ews-crack.git'
+    repo: "{{ git_repo_ews_crack }}"
     dest: "{{ tool_dir }}/ews-crack"
     clone: yes
 
