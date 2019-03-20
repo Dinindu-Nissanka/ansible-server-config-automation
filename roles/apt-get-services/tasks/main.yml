@@ -3,16 +3,12 @@
 
 - name: Update apt packages
   apt:
+    update_cache: yes
+
+- name: Upgrade apt packages
+  apt:
     upgrade: yes
     dpkg_options: 'force-confold,force-confdef'
-    force: yes
-
-- name: Upgrade all packages to the latest version
-  apt:
-    name: "*"
-    state: latest
-    dpkg_options: 'force-confold,force-confdef'
-    force_apt_get: yes
     force: yes
 
 - name: Update all packages to the latest version - dist
