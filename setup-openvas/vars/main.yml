@@ -1,0 +1,11 @@
+---
+# vars file for setup-openvas
+
+services_file_path: /lib/systemd/system
+
+services:
+  - greenbone-security-assistant.service
+  - openvas-manager.service
+  - openvas-scanner.service
+
+openvaspw: redacted  

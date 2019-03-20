@@ -1,0 +1,10 @@
+---
+# tasks file for setup-tools
+
+- name: Creates directory
+  file:
+    path: {{ tool_dir }}
+    state: directory
+
+- include: install-powershell-empire.yml    
+

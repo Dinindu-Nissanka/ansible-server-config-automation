@@ -1,0 +1,25 @@
+---
+# tasks file for setup-openvas
+
+- name: Replace localhost with 0.0.0.0 in service files
+  replace:
+    path: "{{ services_file_path }}/{{ item }}"
+    regexp: "127.0.0.1"
+    replace: "0.0.0.0"
+  with_items: "{{ services }}"
+
+- name: Daemon-reload to apply changes 
+  systemd:
+    daemon_reload: yes
+
+- name: Openvas setup
+  command: openvas-setup
+
+- name: Openvas change password
+  command:   openvasmd --user=admin --new-password="{{ openvaspw }}"
+
+- name: restart services
+  systemd:
+    state: restarted
+    name: "{{ item }}"
+  with_items: "{{ services }}" 

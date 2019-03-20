@@ -2,22 +2,20 @@
 # tasks file for apt-get-services
 
 - name: Update apt packages
-  become: true
   apt:
     upgrade: yes
     dpkg_options: 'force-confold,force-confdef'
     force: yes
 
 - name: Upgrade all packages to the latest version
-  become: true
   apt:
     name: "*"
     state: latest
     dpkg_options: 'force-confold,force-confdef'
+    force_apt_get: yes
     force: yes
 
 - name: Update all packages to the latest version - dist
-  become: true
   apt:
     upgrade: dist
     dpkg_options: 'force-confold,force-confdef'
@@ -26,7 +24,6 @@
 - name: Install a list of packages
   apt:
     name: "{{ packages }}"
-  become: true  
   vars:
     packages:
       - tcpdump
@@ -106,4 +103,3 @@
 - name: Remove dependencies that are no longer required
   apt:
     autoremove: yes
-  become: true      
