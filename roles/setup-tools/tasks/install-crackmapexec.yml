@@ -16,7 +16,7 @@
     clone: yes  
     recursive: yes
 
-- name: pip env install and shell
+- name: pip env install and run setup
   command: "{{ item }}"
   args:
     chdir: "{{ tool_dir }}/CrackMapExec"
@@ -24,9 +24,4 @@
     PATH: "{{ ansible_env.PATH }}:/root/.local/bin"
   with_items:
     - pipenv install
-    - pipenv shell   
-
-- name: Setup crackmapexec
-  command: python setup.py install && deactivate
-  args:
-    chdir: "{{ tool_dir }}/CrackMapExec"
+    - pipenv run python setup.py install
