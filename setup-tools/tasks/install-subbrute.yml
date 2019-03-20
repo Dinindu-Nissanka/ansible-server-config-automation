@@ -1,0 +1,7 @@
+---
+
+- name: Git clone subbrute repository
+  git:
+    repo: 'https://github.com/TheRook/subbrute.git'
+    dest: "{{ tool_dir }}/subbrute"
+    clone: yes

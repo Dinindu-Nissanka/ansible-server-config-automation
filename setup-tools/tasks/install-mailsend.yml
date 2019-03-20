@@ -1,0 +1,17 @@
+---
+
+- name: Git clone MailSend repository
+  git:
+    repo: 'https://github.com/muquit/mailsend.git'
+    dest: "{{ tool_dir }}/mailsend"
+    clone: yes
+
+- name: Run configure file to generate makefile
+  command: bash configure
+  args:
+    chdir: "{{ tool_dir }}/mailsend"
+
+- name: Install MailSend
+  make:
+    chdir: "{{ tool_dir }}/mailsend"
+    target: install  

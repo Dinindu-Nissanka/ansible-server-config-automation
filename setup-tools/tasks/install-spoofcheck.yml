@@ -1,0 +1,13 @@
+---
+
+- name: Git clone spoofcheck repository
+  git:
+    repo: 'https://github.com/BishopFox/spoofcheck.git'
+    dest: "{{ tool_dir }}/spoofcheck"
+    clone: yes
+
+- name: Install requirements
+  pip: 
+    requirements: "{{ tool_dir }}/spoofcheck/requirements.txt"
+    virtualenv: "{{ tool_dir }}/spoofcheck"
+    virtualenv_python: python2.7    

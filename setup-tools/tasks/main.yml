@@ -9,8 +9,15 @@
     path: "{{ tool_dir }}"
     state: directory
 
-- include: 
-    # - install-powershell-empire.yml
-    # - install-crackmapexec.yml
-    # - install-siet.yml
-    - install-emailharvester.yml
+- include: install-powershell-empire.yml
+- include: install-crackmapexec.yml
+- include: install-siet.yml
+- include: install-emailharvester.yml
+- include: install-scancannon.yml
+- include: install-mailsend.yml
+- include: install-subbrute.yml
+- include: install-cracke-dit.yml
+- include: install-spoofcheck.yml
+- include: install-checko365.yml
+- include: install-merlin-server.yml
+- include: install-gscript.yml

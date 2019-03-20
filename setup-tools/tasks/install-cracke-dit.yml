@@ -1,0 +1,13 @@
+---
+
+- name: Git clone cracke-dit repository
+  git:
+    repo: 'https://github.com/eth0izzle/cracke-dit.git'
+    dest: "{{ tool_dir }}/cracke-dit"
+    clone: yes
+
+- name: Install requirements
+  pip: 
+    requirements: "{{ tool_dir }}/cracke-dit/requirements.txt"
+    virtualenv: "{{ tool_dir }}/cracke-dit"
+    virtualenv_python: python2.7    

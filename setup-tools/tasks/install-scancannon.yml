@@ -1,0 +1,7 @@
+---
+
+- name: Git clone ScanCannon repository
+  git:
+    repo: 'https://github.com/johnnyxmas/ScanCannon.git'
+    dest: "{{ tool_dir }}/ScanCannon"
+    clone: yes

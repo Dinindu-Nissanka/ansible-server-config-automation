@@ -1,0 +1,12 @@
+---
+
+- name: Git clone merlin-server repository
+  git:
+    repo: 'https://github.com/Ne0nd0g/merlin.git'
+    dest: "{{ go_path }}/src/github.com/Ne0nd0g/merlin"
+    clone: yes
+
+- name: Install merlin-server
+  make:
+    chdir: "{{ go_path }}/src/github.com/Ne0nd0g/merlin"
+    target: install      

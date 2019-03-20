@@ -8,6 +8,6 @@
 
 - name: Install requirements
   pip: 
-    requirements: "{{ tool_dir }}/EmailHarvester/my_app/requirements.txt"
+    requirements: "{{ tool_dir }}/EmailHarvester/requirements.txt"
     virtualenv: "{{ tool_dir }}/EmailHarvester"
     virtualenv_python: python3.7    

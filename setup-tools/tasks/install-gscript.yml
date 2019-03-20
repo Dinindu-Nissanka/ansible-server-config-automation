@@ -1,0 +1,6 @@
+---
+
+- name: Go get gscipt repository  
+  command: go get github.com/gen0cide/gscript/cmd/gscript
+  environment:
+    GOPATH: "{{ go_path }}"
