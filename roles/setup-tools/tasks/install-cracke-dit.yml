@@ -10,4 +10,4 @@
   pip: 
     requirements: "{{ tool_dir }}/cracke-dit/requirements.txt"
     virtualenv: "{{ tool_dir }}/cracke-dit"
-    virtualenv_python: python2.7    
+    virtualenv_python: "{{ python_2_version }}"    

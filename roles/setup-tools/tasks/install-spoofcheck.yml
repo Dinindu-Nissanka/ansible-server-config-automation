@@ -10,4 +10,4 @@
   pip: 
     requirements: "{{ tool_dir }}/spoofcheck/requirements.txt"
     virtualenv: "{{ tool_dir }}/spoofcheck"
-    virtualenv_python: python2.7    
+    virtualenv_python: "{{ python_2_version }}"    

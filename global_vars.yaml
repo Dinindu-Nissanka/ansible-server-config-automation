@@ -1,2 +1,5 @@
 tool_dir: "/opt/tools"
 go_path: "/opt/go"
+
+python_3_version: python3.7
+python_2_version: python2.7

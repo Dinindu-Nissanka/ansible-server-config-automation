@@ -10,4 +10,4 @@
   pip: 
     requirements: "{{ tool_dir }}/macro_pack/requirements.txt"
     virtualenv: "{{ tool_dir }}/macro_pack"
-    virtualenv_python: python3.7    
+    virtualenv_python: "{{ python_3_version }}"    

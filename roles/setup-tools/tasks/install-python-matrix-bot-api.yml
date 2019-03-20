@@ -12,6 +12,6 @@
 
 - name: Install matrix-python-sdk for encryption
   pip:
-    name: git+https://github.com/Zil0/matrix-python-sdk/tree/e2e_beta_2
-    executable: pip-3.7
+    name: git+https://github.com/Zil0/matrix-python-sdk.git@e2e_beta_2
+    executable: pip3
     extra_args: --process-dependency-links

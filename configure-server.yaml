@@ -1,7 +1,4 @@
-- hosts: localhost
-  vars:
-    env:
-      TOOLDIR: /opt/tools
+- hosts: localhost  
   become: true    
 
   roles:
