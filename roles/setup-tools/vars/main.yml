@@ -14,6 +14,7 @@ git_repo_cracke_dit: https://github.com/eth0izzle/cracke-dit.git
 git_repo_crackmapexec: https://github.com/byt3bl33d3r/CrackMapExec.git
 git_repo_emailharvester: https://github.com/maldevel/EmailHarvester.git
 git_repo_ews_crack: https://github.com/mikesiegel/ews-crack.git
+git_repo_gscript: github.com/gen0cide/gscript/cmd/gscript
 git_repo_macro_pack: https://github.com/sevagas/macro_pack.git
 git_repo_mailsend: https://github.com/muquit/mailsend.git
 git_repo_merlin: https://github.com/Ne0nd0g/merlin.git
