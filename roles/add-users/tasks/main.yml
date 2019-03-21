@@ -5,5 +5,7 @@
   git:
     repo: "{{ private_git_repo }}"
     key_file: "{{ git_ssh_key_location }}"
-    dest: "{{ repo_directory }}/git/user-repository"
-      
+    dest: "{{ repo_directory }}"
+
+- name: Include user management playbook
+  include: "{{ repo_directory }}/{{ user_playbook }}"      

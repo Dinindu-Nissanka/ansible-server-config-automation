@@ -1,7 +1,7 @@
 ---
 # vars file for add-users
 
-private_git_repo: https://github.com/slgeeks/users-repo.git
-git_ssh_key_location: /root/.ssh/id_rsa.pub
-repo_directory: /opt
-user_playbook: 
+private_git_repo: git@github.com:slgeeks/users-repo.git
+git_ssh_key_location: /root/.ssh/id_rsa
+repo_directory: /opt/git/user-repository
+user_playbook: user.yaml 
